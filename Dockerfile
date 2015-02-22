@@ -1,6 +1,4 @@
 
-# docker run -dt -p 8111:8111 ariya/centos6-teamcity-server
-
 FROM petegoo/centos-jre8
 
 MAINTAINER Peter Goodman <docker@petegoo.com>
