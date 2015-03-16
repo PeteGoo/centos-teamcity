@@ -10,7 +10,7 @@ ENV TEAMCITY_DATA_PATH /data/teamcity
 # Download and install TeamCity to /opt
 RUN yum -y install tar wget unzip sudo python-setuptools
 RUN easy_install supervisor
-ENV TEAMCITY_PACKAGE TeamCity-9.0.2.tar.gz
+ENV TEAMCITY_PACKAGE TeamCity-9.0.3.tar.gz
 ENV TEAMCITY_DOWNLOAD http://download.jetbrains.com/teamcity
 RUN wget -qO- $TEAMCITY_DOWNLOAD/$TEAMCITY_PACKAGE | tar xz -C /opt
 #ADD TeamCity-9.0.2.tar.gz /opt
